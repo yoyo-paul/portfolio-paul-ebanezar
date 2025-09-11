@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paul Ebanezar | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Paul Ebanezar</h1>
+    <p>2nd BSc Computer Science (AI)</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Paul Ebanezar, a 2nd year BSc Computer Science student specializing in Artificial Intelligence. I’m passionate about coding and creating useful web applications.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card" onclick="toggleDetails(this)">
+      <h3>Project 1: Portfolio Website</h3>
+      <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+      <div class="details">
+        <p>Features include responsive design, smooth scrolling, and a contact form.</p>
+      </div>
+    </div>
+
+    <div class="project-card" onclick="toggleDetails(this)">
+      <h3>Project 2: AI Chatbot</h3>
+      <p>An AI-powered chatbot built using Python and machine learning techniques.</p>
+      <div class="details">
+        <p>Implemented natural language processing and conversational flows.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" required /><br/>
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" required /><br/>
+      <label for="message">Message:</label><br/>
+      <textarea id="message" rows="4" required></textarea><br/>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Paul Ebanezar</p>
+  </footer>
+
+  <script src="script.js"
